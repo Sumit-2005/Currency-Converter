@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="main">
+            <h2 class="heading">Currency Converter</h2>
+            <div class="choose">
+                <div class="flag">
+                    <img src="https://flagsapi.com/IN/flat/64.png">
+                </div>
+                <div class="drop">
+                    <p>From</p>
+                    <select name="from">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="flag">
+                <img src="https://flagsapi.com/US/flat/64.png">
+                </div>
+                <div class="drop">
+                    <p>To</p>
+                    <select name="from">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="amount">
+                <p>Please enter the Amount</p>
+                <input type="text">
+            </div>
+            <button class="btn">Get Exchange Rate</button>
+        </div>
+        <p class="msg"><b><i>Please fill above blanks</i></b></p>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
