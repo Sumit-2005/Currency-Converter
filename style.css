@@ -24,7 +24,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    color: #73C1C6;
+    color: #03045E;
 }
 
 .amt p{
@@ -59,6 +59,16 @@ h1{
 
 .flag{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+img {
+    max-height: 65px;
+    width: 65px;
 }
 
 i{
@@ -68,7 +78,7 @@ i{
 select {
     width: 420px;
     height: 45px;
-    border: 1px solid lightgray;
+    border: none;
     border-radius: 10px;
     margin: 20px;
     outline: none;
