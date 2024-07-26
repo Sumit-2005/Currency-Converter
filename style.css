@@ -14,7 +14,7 @@ body{
 main{
     background-color: white;
     padding: 20px;
-    height: 600px;
+    height: 450px;
     width: 1100px;
     border-radius: 5px;  
 }
@@ -24,6 +24,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    color: #73C1C6;
 }
 
 .amt p{
@@ -31,7 +32,6 @@ h1{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    
 }
 
 .amt input{
