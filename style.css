@@ -62,3 +62,42 @@ h1{
     display: flex;
 }
 
+i{
+    font-size:30px;    
+}
+
+select {
+    width: 420px;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 20px;
+    outline: none;
+}
+
+.btn{
+    margin-left: 275px;
+    width: 50%;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: large;
+    outline: none;
+    margin-top: 30px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.btn:hover{
+    background-color: #ABD2FA;
+    color: black;
+    border: 2px solid black;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
