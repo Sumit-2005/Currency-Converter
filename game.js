@@ -1,7 +1,9 @@
-const base_URL ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur/jpy.json";
+const base_URL ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
 
 const dropdown = document.querySelectorAll(".dropdowns select");
 const btn = document.querySelector("button");
+const fromCurr = document.querySelector(".from select");
+const toCurr = document.querySelector(".to select");
 
 for (let select of dropdown) {
     for (currCode in countryList) {
@@ -29,7 +31,18 @@ const updateFlag = (element) => {
     img.src = fleg;
 }
 
-btn.addEventListener("click", (evt) => {
+btn.addEventListener("click", async (evt) => {
     evt.preventDefault();
+    let amount = document.querySelector("input");
+    let amtVal = amount.value;
+    if (amtVal === "" || amtVal < 1) {
+        amtVal = 1;
+        amount.value = "1";
+    }
+
+    let URL = `${base_URL}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
+    let response = await fetch(URL);
+    let data = await response.json();
+    console.log(data);
 })
 
